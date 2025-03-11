@@ -1,48 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Amigo Secreto</title>
+    <link rel="stylesheet" href="Stylespiner.css">
+    <title>Document</title>
 </head>
-
-
 <body>
-    <main class="main-content">
-        <img class= "header1"src="assets/bg05.jpg" alt="fondo de pantalla">
-        <header class="header-banner">
-            <h1 class="main-title">Amigo Secreto</h1>
-            <img class= "img-Header1" src="assets/bg03.png" alt="Imagen representativa de amigo secreto">
-        </header>
-        
-        <section class="input-section">
-            <div class="BMO">
-                <spline-viewer class="BMO" url="https://prod.spline.design/AONd9pd9DOBEx73a/scene.splinecode" style="height:300px; width: 400px; "></spline-viewer>
-            </div>
-            <h2 class="section-title">Digite el nombre de sus amigos</h2>
-            <div class="input-wrapper">
-                <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
-                <button class="button-add" onclick="agregarAmigo()">Añadir</button>
-            </div>
-           
-            <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
-            <ul id="resultado" class="result-list" aria-live="polite"></ul>
-        
-            <div class="button-container">
-                <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
-                    <img src="assets/play_circle_outline.png" alt="Ícono para sortear">
-                    Sortear amigo
-                </button>
-            </div>
-            
-        </section>
-        
-    </main>
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.75/build/spline-viewer.js"></script>
-    <script src="app.js" defer></script>
+
+    <img class="Wallpaper1" src="assets/floorbg1.jpg" alt="Background">
+
+    <div class="loading-container">
+        <img class="nedflandergif" src="assets/ned-flanders-dancing.gif" alt="Flanders Loading">
+        <div class="loading-text">Click To Start Game ..</div>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+    <audio id="loading-audio" src="https://res.cloudinary.com/tecnologi-zifrikc/video/upload/v1741734988/soundbg1_yfjddw.mp3" autoplay ></audio>
+    
+    <script src="app.js">
+
+    </script>
 </body>
 </html>
+
