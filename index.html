@@ -10,14 +10,19 @@
     <title>Amigo Secreto</title>
 </head>
 
+
 <body>
     <main class="main-content">
+        <img class= "header1"src="assets/bg05.jpg" alt="fondo de pantalla">
         <header class="header-banner">
             <h1 class="main-title">Amigo Secreto</h1>
-            <img src="assets/amigo-secreto.png" alt="Imagen representativa de amigo secreto">
+            <img class= "img-Header1" src="assets/bg03.png" alt="Imagen representativa de amigo secreto">
         </header>
         
         <section class="input-section">
+            <div class="BMO">
+                <spline-viewer class="BMO" url="https://prod.spline.design/AONd9pd9DOBEx73a/scene.splinecode" style="height:300px; width: 400px; "></spline-viewer>
+            </div>
             <h2 class="section-title">Digite el nombre de sus amigos</h2>
             <div class="input-wrapper">
                 <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
@@ -26,16 +31,18 @@
            
             <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
             <ul id="resultado" class="result-list" aria-live="polite"></ul>
-
+        
             <div class="button-container">
                 <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
                     <img src="assets/play_circle_outline.png" alt="Ícono para sortear">
                     Sortear amigo
                 </button>
             </div>
+            
         </section>
+        
     </main>
-
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.75/build/spline-viewer.js"></script>
     <script src="app.js" defer></script>
 </body>
 </html>

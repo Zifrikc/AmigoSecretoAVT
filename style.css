@@ -17,7 +17,6 @@
 
 body {
     height: 100vh;
-    background-color: var(--color-primary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +49,10 @@ body {
     align-items: center;
     padding: 20px;
     width: 100%;
+    position: relative; /* Añadimos posición relativa */
+    z-index: 1;
 }
+
 
 /* Títulos */
 .main-title {
@@ -159,4 +161,40 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+/*Estilos Imagen header*/
+.img-Header1{
+    max-height: 75vh;
+    max-width: 75vh;
+    
+    z-index: 1;
+    min-height:50vh;
+
+}
+.header1{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.BMO {
+    position: absolute; /* La imagen 3D se posiciona absolutamente respecto al contenedor padre */
+    top: 50%; /* La imagen se posiciona en el centro vertical */
+    right: 20px; /* Se coloca a la derecha */
+    transform: translateY(-50%); /* Ajusta el posicionamiento vertical para que esté centrada */
+    z-index: 1; /* Asegura que la imagen esté encima de los otros elementos */
+}
+
+/* Ajustes de la imagen 3D */
+.spline-viewer {
+    width: 400px;  /* Tamaño de la imagen 3D */
+    height: 300px;
 }
